@@ -1,4 +1,44 @@
-@import "fontes.scss";
-@import "caixa-navbar.scss";
 
 
+@mixin font{
+	font-size: 20px;
+	font-family: Verdana;
+	
+}
+
+.navbar {
+	list-style: none;
+	padding:1rem;
+	width: 500px;
+	height: 50px;
+	background-color: #fff;
+	border: 1px solid #49213e;
+	margin:50px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.navbar-items {
+		width: 300px;
+		display:flex;
+		justify-content: space-around;
+	}
+	
+	.navbar-brand {
+		font-weight: bold;
+		color: #49213e; 
+		font-size: 2rem;
+	}
+
+	.navbar-item {
+		font-size: 1.5rem;
+	 > a {
+	 	color: #49213e;
+	 	text-decoration: none;
+	 	&:hover {
+	 		font-weight: bold;
+	 	}
+	 }
+	}
+
+}
